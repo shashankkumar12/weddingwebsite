@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #fff0f6;
+    background: #fff3e6;
     color: #333;
     text-align: center;
 }
 
 .hero {
-    background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+    background: linear-gradient(135deg, #7b1e3a, #f28c28);
     color: white;
     padding: 60px 20px;
 }
@@ -29,7 +29,7 @@ section {
 }
 
 h2 {
-    color: #d63384;
+    color: #7b1e3a; /* maroon */
 }
 
 .gallery {
@@ -58,13 +58,13 @@ h2 {
 }
 
 .event-card.highlight {
-    background: #ffe3ec;
-    border: 2px solid #ff5fa2;
+    background: #fff0dc;
+    border: 2px solid #f28c28;
 }
 
 .venue {
-    margin-top: 25px;
     font-size: 18px;
+    color: #7b1e3a;
 }
 
 .quiz {
@@ -72,7 +72,9 @@ h2 {
 }
 
 .question {
-    background: white;
+   background: #f7c873;
+    color: #7b1e3a;
+    font-weight: 600;
     padding: 18px;
     margin: 18px auto;
     border-radius: 14px;
@@ -99,7 +101,7 @@ h2 {
 }
 
 footer {
-    background: #d63384;
+    background: #7b1e3a;
     color: white;
     padding: 20px;
 }
