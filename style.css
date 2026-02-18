@@ -47,7 +47,7 @@ header {
       rgba(139, 30, 63, 0.35),
       rgba(199, 75, 107, 0.4)
     ),
-    url("img1.jpg") center 30% / cover no-repeat;
+    url("img4.jpg") center 75% / cover no-repeat;
   text-align: center;
   padding: 120px 20px;
   border-bottom: 5px solid #f2b6c6;
