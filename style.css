@@ -4,8 +4,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #fff3e6; /* soft peach */
-    color: #333;
+    background: #5a0f24; /* deep maroon background */
+    color: #fff;
     text-align: center;
 }
 
@@ -13,20 +13,22 @@ body {
    HERO / HEADER
    ========================= */
 .hero {
-    background: linear-gradient(135deg, #7b1e3a, #f28c28); /* maroon → orange */
-    color: white;
-    padding: 60px 20px;
+    background: linear-gradient(135deg, #7b1e3a, #b33a3a);
+    color: #fff;
+    padding: 70px 20px;
 }
 
 .tagline {
     font-size: 20px;
     margin-top: 10px;
+    color: #ffd8a8;
 }
 
 #countdown {
     font-size: 22px;
     margin-top: 15px;
     font-weight: 600;
+    color: #ffe4b5;
 }
 
 /* =========================
@@ -35,12 +37,15 @@ body {
 section {
     padding: 45px 20px;
     max-width: 950px;
-    margin: auto;
+    margin: 30px auto;
+    background: #7b1e3a;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 h2 {
-    color: #7b1e3a; /* maroon */
-    margin-bottom: 15px;
+    color: #ffb703; /* golden orange */
+    margin-bottom: 18px;
 }
 
 /* =========================
@@ -48,7 +53,8 @@ h2 {
    ========================= */
 .story p {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.8;
+    color: #ffecec;
 }
 
 /* =========================
@@ -57,18 +63,18 @@ h2 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 18px;
 }
 
 .gallery img {
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
     transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 /* =========================
@@ -77,25 +83,25 @@ h2 {
 .events {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 24px;
 }
 
 .event-card {
-    background: white;
+    background: #5a0f24;
     padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    border: 1px solid #ffb703;
 }
 
 .event-card.highlight {
-    background: #fff0dc;
-    border: 2px solid #f28c28;
+    background: #8c1d40;
+    border: 2px solid #ffb703;
 }
 
 .venue {
     margin-top: 25px;
     font-size: 18px;
-    color: #7b1e3a;
+    color: #ffd8a8;
 }
 
 /* =========================
@@ -106,34 +112,35 @@ h2 {
 }
 
 .question {
-    background: white;
-    padding: 18px;
-    margin: 18px auto;
-    border-radius: 14px;
+    background: #5a0f24;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 16px;
     max-width: 520px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    border: 1px solid #ffb703;
 }
 
 .question p {
     font-weight: 600;
+    color: #fff3cd;
 }
 
 .question button {
-    margin: 8px;
-    padding: 10px 22px;
+    margin: 10px;
+    padding: 10px 24px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-    background: #f7c873; /* soft gold */
-    color: #7b1e3a;
-    font-weight: 600;
-    transition: all 0.2s ease;
+    background: #ffb703;
+    color: #5a0f24;
+    font-weight: 700;
+    transition: all 0.25s ease;
 }
 
 .question button:hover {
     background: #f28c28;
-    color: white;
+    color: #fff;
 }
 
 /* Quiz result states */
@@ -151,9 +158,9 @@ h2 {
    FOOTER
    ========================= */
 footer {
-    background: #7b1e3a;
-    color: white;
-    padding: 20px;
+    background: #3a0818;
+    color: #ffd8a8;
+    padding: 22px;
     font-size: 16px;
 }
 
@@ -161,15 +168,16 @@ footer {
    RESPONSIVE
    ========================= */
 @media (max-width: 600px) {
+    section {
+        margin: 20px 10px;
+        padding: 35px 15px;
+    }
+
     h1 {
         font-size: 28px;
     }
 
     h2 {
         font-size: 22px;
-    }
-
-    .tagline {
-        font-size: 18px;
     }
 }
