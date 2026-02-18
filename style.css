@@ -1,13 +1,19 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #fff3e6;
+    background: #fff3e6; /* soft peach */
     color: #333;
     text-align: center;
 }
 
+/* =========================
+   HERO / HEADER
+   ========================= */
 .hero {
-    background: linear-gradient(135deg, #7b1e3a, #f28c28);
+    background: linear-gradient(135deg, #7b1e3a, #f28c28); /* maroon → orange */
     color: white;
     padding: 60px 20px;
 }
@@ -20,8 +26,12 @@ body {
 #countdown {
     font-size: 22px;
     margin-top: 15px;
+    font-weight: 600;
 }
 
+/* =========================
+   SECTIONS
+   ========================= */
 section {
     padding: 45px 20px;
     max-width: 950px;
@@ -30,8 +40,20 @@ section {
 
 h2 {
     color: #7b1e3a; /* maroon */
+    margin-bottom: 15px;
 }
 
+/* =========================
+   STORY TEXT
+   ========================= */
+.story p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* =========================
+   PHOTO GALLERIES
+   ========================= */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -42,8 +64,16 @@ h2 {
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
 }
 
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+/* =========================
+   EVENTS SECTION
+   ========================= */
 .events {
     display: flex;
     flex-direction: column;
@@ -63,22 +93,29 @@ h2 {
 }
 
 .venue {
+    margin-top: 25px;
     font-size: 18px;
     color: #7b1e3a;
 }
 
+/* =========================
+   QUIZ SECTION
+   ========================= */
 .quiz {
     margin-top: 30px;
 }
 
 .question {
-   background: #f7c873;
-    color: #7b1e3a;
-    font-weight: 600;
+    background: white;
     padding: 18px;
     margin: 18px auto;
     border-radius: 14px;
     max-width: 520px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.question p {
+    font-weight: 600;
 }
 
 .question button {
@@ -88,20 +125,51 @@ h2 {
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    background: #f7c873; /* soft gold */
+    color: #7b1e3a;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
+.question button:hover {
+    background: #f28c28;
+    color: white;
+}
+
+/* Quiz result states */
 .correct {
     background-color: #2ecc71 !important;
-    color: white;
+    color: white !important;
 }
 
 .wrong {
     background-color: #e74c3c !important;
-    color: white;
+    color: white !important;
 }
 
+/* =========================
+   FOOTER
+   ========================= */
 footer {
     background: #7b1e3a;
     color: white;
     padding: 20px;
+    font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
 }
