@@ -1,30 +1,32 @@
-/* =====================================
-   GLOBAL RESET
-===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =====================================
-   BODY & BASE
-===================================== */
+/* =========================
+   BODY
+========================= */
 body {
-  font-family: "Poppins", "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #fff1f5, #ffffff);
-  color: #5c3a3a;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #f2a6bb, #ffd6e1);
+  color: #5c2b3a;
   line-height: 1.75;
   scroll-behavior: smooth;
 }
 
-/* =====================================
-   HEADINGS & TEXT
-===================================== */
+/* =========================
+   HEADINGS
+========================= */
 h1, h2, h3 {
-  font-family: "Playfair Display", serif;
-  color: #b85c78;
-  letter-spacing: 0.5px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  color: #8c1d40;
 }
 
 h1 {
@@ -33,108 +35,71 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
-h3 {
-  font-size: 1.4rem;
-}
-
-p {
-  font-size: 1.05rem;
-  color: #6b4b4b;
-}
-
-/* =====================================
-   HEADER / HERO SECTION
-===================================== */
+/* =========================
+   HERO / HEADER
+========================= */
 header {
   background:
     linear-gradient(
-      rgba(255, 220, 230, 0.55),
-      rgba(255, 240, 245, 0.60)
+      rgba(164, 53, 86, 0.35),
+      rgba(184, 70, 105, 0.45)
     ),
     url("img1.jpg") center/cover no-repeat;
   text-align: center;
-  padding: 100px 20px;
-  border-bottom: 4px solid #f2b6c6;
+  padding: 120px 20px;
+  border-bottom: 5px solid #f2b6c6;
 }
 
-header h1 span {
-  color: #d16c8a;
+header h1,
+header p,
+#countdown {
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
 }
 
 header p {
   font-size: 1.3rem;
-  margin-top: 12px;
-  color: #7a4f5b;
+  margin-top: 10px;
 }
 
-/* =====================================
+/* =========================
    COUNTDOWN
-===================================== */
-.countdown {
-  margin-top: 35px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
+========================= */
+#countdown {
+  font-size: 1.6rem;
+  margin-top: 25px;
+  font-weight: 500;
 }
 
-.time-box {
-  background: #ffffff;
-  border: 2px solid #f2b6c6;
-  padding: 16px 20px;
-  border-radius: 16px;
-  min-width: 90px;
-  box-shadow: 0 10px 25px rgba(214, 148, 166, 0.25);
-}
-
-.time-box h3 {
-  font-size: 2rem;
-  color: #d16c8a;
-}
-
-.time-box span {
-  font-size: 0.9rem;
-  color: #8a5c68;
-}
-
-/* =====================================
-   COMMON SECTION STYLE
-===================================== */
+/* =========================
+   SECTIONS
+========================= */
 section {
   padding: 80px 10%;
   text-align: center;
 }
 
 section:nth-child(even) {
-  background: #fff6f9;
+  background: #f7c1d1;
 }
 
-/* Decorative divider */
-.divider {
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(to right, #f2b6c6, #d16c8a);
-  margin: 22px auto 35px;
-  border-radius: 10px;
-}
-
-/* =====================================
-   STORY SECTION
-===================================== */
+/* =========================
+   STORY
+========================= */
 .story-box {
-  background: #ffffff;
-  border: 1px solid #f2b6c6;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #f2b6c6;
   padding: 35px;
   border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(214, 148, 166, 0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* =====================================
+/* =========================
    GALLERY
-===================================== */
+========================= */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -143,7 +108,7 @@ section:nth-child(even) {
 
 .gallery img {
   width: 100%;
-  height: 310px;
+  height: 300px;
   object-fit: cover;
   border-radius: 22px;
   border: 3px solid #f2b6c6;
@@ -152,12 +117,12 @@ section:nth-child(even) {
 
 .gallery img:hover {
   transform: scale(1.06);
-  box-shadow: 0 16px 35px rgba(214, 148, 166, 0.45);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.35);
 }
 
-/* =====================================
-   EVENTS SECTION
-===================================== */
+/* =========================
+   EVENTS
+========================= */
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -165,44 +130,36 @@ section:nth-child(even) {
 }
 
 .event-card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
   border: 2px solid #f2b6c6;
   padding: 35px;
   border-radius: 26px;
-  box-shadow: 0 14px 35px rgba(214, 148, 166, 0.3);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.18);
 }
 
 .event-card h3 {
-  color: #d16c8a;
+  color: #8c1d40;
   margin-bottom: 10px;
 }
 
-.event-card p {
-  color: #6b4b4b;
-}
-
-/* =====================================
-   QUIZ SECTION
-===================================== */
+/* =========================
+   QUIZ
+========================= */
 .quiz {
   max-width: 800px;
   margin: auto;
-  background: #ffffff;
+  background: rgba(255,255,255,0.95);
   border: 2px solid #f2b6c6;
   padding: 40px;
   border-radius: 30px;
-  box-shadow: 0 18px 40px rgba(214, 148, 166, 0.3);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
 }
 
-.quiz h3 {
-  margin-bottom: 20px;
-}
-
-.quiz button {
+.question button {
   background: linear-gradient(145deg, #f7c1d1, #f2a6bb);
   border: none;
-  color: #5c3a3a;
-  padding: 12px 24px;
+  color: #5c2b3a;
+  padding: 12px 26px;
   margin: 10px;
   border-radius: 30px;
   cursor: pointer;
@@ -210,47 +167,42 @@ section:nth-child(even) {
   transition: all 0.3s ease;
 }
 
-.quiz button:hover {
-  background: linear-gradient(145deg, #d16c8a, #f2b6c6);
-  color: #ffffff;
+.question button:hover {
+  background: linear-gradient(145deg, #8c1d40, #d16c8a);
+  color: white;
 }
 
-/* Quiz answers */
+/* Quiz states */
 .correct {
-  background: #8fcfb2 !important;
-  color: #ffffff !important;
+  background: #6cc29a !important;
+  color: white !important;
 }
 
 .wrong {
-  background: #e07a7a !important;
-  color: #ffffff !important;
+  background: #e06b6b !important;
+  color: white !important;
 }
 
-/* =====================================
+/* =========================
    FOOTER
-===================================== */
+========================= */
 footer {
-  background: #fff1f5;
+  background: #8c1d40;
+  color: #fff;
+  padding: 25px;
   text-align: center;
-  padding: 35px 15px;
-  border-top: 3px solid #f2b6c6;
 }
 
 footer p {
-  color: #7a4f5b;
   font-size: 1rem;
 }
 
-/* =====================================
+/* =========================
    RESPONSIVE
-===================================== */
+========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.4rem;
-  }
-
-  h2 {
-    font-size: 1.9rem;
   }
 
   section {
